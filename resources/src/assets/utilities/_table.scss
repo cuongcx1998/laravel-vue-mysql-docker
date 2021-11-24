@@ -1,0 +1,28 @@
+.table {
+  &--item-center {
+    tr,
+    th,
+    td {
+      vertical-align: middle;
+    }
+  }
+}
+.table-scroll tfoot,
+.table-scroll tfoot th,
+.table-scroll tfoot td {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  background: $white;
+  z-index:4;
+  border-top: 1px solid $dark;
+}
+
+.table-scroll thead th {
+  background: $white;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  white-space: nowrap;
+}

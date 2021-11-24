@@ -1,0 +1,16 @@
+@import 'variables';
+@import "~bootstrap/scss/bootstrap.scss";
+
+$form-validation-states: map-merge(
+    (
+      "loading": (
+        "color": #ced4da,
+        "icon": $form-feedback-icon-loading
+      )
+    ),
+    $form-validation-states
+);
+
+@each $state, $data in $form-validation-states {
+  @include form-validation-state($state, map-get($data, color), map-get($data, icon));
+}

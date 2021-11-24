@@ -1,0 +1,34 @@
+.app {
+  .breadcrumb-fixed {
+    position: fixed;
+    margin-left: $sidebar-size-sm;
+    background-color: transparent;
+    left: 0;
+    width: 100%;
+    z-index: 90;
+    .breadcrumb-item {
+      &.active {
+        color: $breadcrumb-bg;
+        opacity: 0.75;
+      }
+      &::before {
+        color: $breadcrumb-bg;
+      }
+    }
+    ol {
+      color: $breadcrumb-bg;
+      background: transparent;
+      a {
+        color: $breadcrumb-bg;
+        &:hover {
+          opacity: 0.75;
+        }
+      }
+    }
+  }
+  &--sm {
+    .breadcrumb-fixed {
+      margin-left: $sidebar-size-sm;
+    }
+  }
+}

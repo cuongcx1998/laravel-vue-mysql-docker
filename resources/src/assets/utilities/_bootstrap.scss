@@ -1,0 +1,21 @@
+.rotate45 {
+  transform: rotate(45deg);
+}
+.rotate90 {
+  transform: rotate(90deg);
+}
+.rotate-reverse90 {
+  transform: rotate(-90deg);
+}
+.rotate180 {
+  transform: rotate(180deg);
+}
+.required-input {
+  color: red;
+}
+.required {
+  &:after {
+    content: '*';
+    color: red;
+  }
+}
