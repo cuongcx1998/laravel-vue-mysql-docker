@@ -9,8 +9,7 @@ export default [
     name: 'home',
     component: () => import('@/pages/index.vue'),
     meta: {
-      title: 'AutoStyle',
-      middleware: [],
+      title: 'Home',
     },
   },
 ];

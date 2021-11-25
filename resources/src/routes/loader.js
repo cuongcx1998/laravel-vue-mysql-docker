@@ -34,22 +34,6 @@ router.beforeEach(async (to, from, next) => {
   // if(to.name === 'Logout') {
   //   return next({ name: 'login', query: to.query });
   // }
-  //
-  // if(!store.getters['auth/user'] && to.name !== 'login') {
-  //   try {
-  //     await store.dispatch('auth/getUser');
-  //   } catch(error) {
-  //     return Promise.reject(error);
-  //   }
-  // }
-  // const authorize = Array.isArray(to.meta.authorize) ?
-  //   to.meta.authorize :
-  //   [to.meta.authorize];
-  // const user = store.getters['auth/user'];
-  //
-  // if (user && authorize.length && !authorize.some(role => user[role])) {
-  //   return next({name: 'home'});
-  // }
 
   if(!to.meta.middleware) {
     return next();
